@@ -18,7 +18,7 @@ transform = transforms.Compose([transforms.ToTensor(),transforms.Normalize((0.13
 # transform：一系列作用在PIL图片上的转换操作，返回一个转换后的版本
 #batch_size：设置每次传入的数据量；shuffle=True：是否打乱数据集
 #为嘛要用Dataloader：数据要按照batchsize大小慢慢传入训练
-batch_size = 10
+batch_size = 100
 train_dataset = datasets.MNIST(root='../dataset/mnist/', train=True, download=True, transform=transform)
 train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
 #导入测试数据集

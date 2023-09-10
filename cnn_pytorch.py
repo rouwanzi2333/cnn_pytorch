@@ -87,7 +87,7 @@ def test(): #部分函数用法同train
     return 100 * correct / total #返回正确率
 
 if __name__ == '__main__':
-    len =10 #epoch大小
+    len =1000 #epoch大小
     x = [0] * len
     y = [0] * len
     for epoch in range(10): #按照epoch=10进行循环
